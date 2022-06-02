@@ -7,11 +7,11 @@ const mongoose = require('mongoose');
 const configuration = require('./configuration.js');
 
 // REQUIRING ONLY config() METHOD :
-const { config } = require("dotenv");
+// const { config } = require("dotenv");
 
-config();
+// config();
 
-const {  PORT, FARM_APP_MONGODB_HOST, FARM_APP_MONGODB_DATABASE } = require("./configuration.js");
+const {  PORT, FARM_APP_MONGODB_HOST, FARM_APP_MONGODB_DATABASE, MONGODB_URI } = require("./configuration.js");
 
 
 // USE AN IIFE TO EXECUTE CONNECTION : 
